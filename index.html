@@ -1,107 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><title>resume</title><link href=https://show.metinfo.cn/muban/M1156010/328/favicon.ico rel="shortcut icon" type=image/x-icon><script src=./static/animate/swiper.animate1.0.3.min.js></script><style>body,html,#app{
+    		margin:0;
+    		padding:0;
+    		height:100%;
+    	}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>love</title>
-  <link href="./static/css/default.css" tppabs="css/default.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./static/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="./static/css/demo.css">
+      /* icon */
+      @font-face {
+      font-family: 'iconfont';
+        src: url('./static/iconfont/iconfont.eot');
+        src: url('./static/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('./static/iconfont/iconfont.woff') format('woff'),
+        url('./static/iconfont/iconfont.ttf') format('truetype'),
+        url('./static/iconfont/iconfont.svg#iconfont') format('svg');
+      }
+      .iconfont{
+        font-family:"iconfont" !important;
+        font-size:16px;font-style:normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+      }
 
-  <script type="text/javascript" src="./static/js/jquery.js" tppabs="./js/jquery.js"></script>
-  <script type="text/javascript" src="./static/js/garden.js" tppabs="./js/garden.js"></script>
-  <script type="text/javascript" src="./static/js/functions.js" tppabs="./js/functions.js"></script>
-  <style type="text/css">
-    @font-face {
-      font-family: digit;
-      src: url("digital-7_mono.ttf") format("truetype");
-    }
-  </style>
-</head>
-<body>
-  <div class="demo"></div>
-  <!-- <script type="text/javascript" src="./static/js/jquery-1.11.0.min.js"></script> -->
-  <script type="text/javascript" src="./static/js/jquery.fireworks.js"></script>
-  <div id="mainDiv">
-    <div id="content">
-      <div id="code"> <span class="comments">亲爱的维维：</span><br />
-        <span class="space"><span class="comments"></span></span><br />
-        <span class="space" /><span class="comments">第一次认识你开始，虽然没见面，但是从你回我第一句话，我就开始对你感兴趣了，就不知不觉的想和你多说话，第一天认识你，知道你要晕车还是很严重的那种，那天天气特别的冷，你为了赶飞机，不晕车，然后坐了两个小时的摩托车，到了之后，你说冷的不行了，不知道为什么，当时就感觉心里特别难受。那天之后我们我们聊了很多，聊到你小时候一些调皮的事，读书时怎么过的，出去之后，都受了哪些委屈，后来怎么回家种地的，那也是我感触最深的，从这些谈话中，我了解到你是一个，有几分调皮，有主见，能吃苦，关心别人胜过自己，聪明，漂亮的好女孩。</span><br />
-        <span class="space" /><span class="comments">我QQ名称叫等待，从认识你之后，我觉得我终于等到我要等的人了，感谢老天把你带到我身边，我每天工作都很累，但是一想到你就会很开心，经常会想你，就忍不住给你发信息，心之所向，情不自已，情不知所起，一往情深。</span><br />
-        <span class="space" /><span class="comments">认识你之后，我变得爱说话了，平时不敢做的事我做了，不敢说的话我说了，我会想法设法的让你高兴，因为太在乎，所以经常想和你说话，请不讨厌我，因为太在乎，你不回的时候回胡思乱想，因为太在乎，会说一些只会对你说的话，哪些都是我的心里话，请相信我，我说哪些都是因为我太在乎你，爱你。</span><br />
-        <span class="space" /><span class="comments">认识你之后，我们有了一个看似简单，其实非常难做到的1314约定，之后我每天早上第一件事就是做好这个约定，因为，这表示我一天中最重要的事，表示我第一个想的人是你，表示你在我心中的位置是第一位，没什么事和人能取代你，维维，我喜欢你。</span><br /><br />
-        <span class="space" /><span class="comments">　　　　　　　　　　　　　　　　爱你的奎奎</span><br />
-      </div>
-      <div id="loveHeart">
-        <canvas id="garden"></canvas>
-        <div id="words">
-          <div id="messages"> 宝贝这是我们认识的第
-            <div id="elapseClock"></div>
-          </div>
-          <div id="loveu"> 永远爱你，一辈子，不分离！<br />
-            <div class="signature"> -最爱你的人</div>
-          </div>
-        </div>
-      </div>
-      <div class="bg1">
-      </div>
-      <script type="text/javascript">
-        $('.demo').fireworks({ 
-          sound: false, // sound effect
-          opacity: .1, 
-          width: '100%', 
-          height: '100%' 
-        });
-        var offsetX = $("#loveHeart").width() / 2;
-        var offsetY = $("#loveHeart").height() / 2 - 55;
-        var together = new Date();
-        together.setFullYear(2019, 01, 19);
-        together.setHours(10);
-        together.setMinutes(0);
-        together.setSeconds(0);
-        together.setMilliseconds(0);
-        // console.log("together:  ",together);
+      /*加载loading*/
+      #Loading {
+        top:50%;
+        left:50%;
+        position: absolute;
+        -webkit-transform: translateY(-50%)  translateX(-50%);
+        transform: translateY(-50%)  translateX(-50%);
+        z-index:100;
+      }
+      /*@-webkit-keyframes ball-beat {
+        50% {
+          opacity: 0.2;
+          -webkit-transform: scale(0.75);
+          transform: scale(0.75); }
 
-        if (!document.createElement('canvas').getContext) {
-          var msg = document.createElement("div");
-          msg.id = "errorMsg";
-          msg.innerHTML = "提醒您：您的浏览器版本过旧^_^<br/>" +
-            "推荐使用 <a href='http://dlsw.br.baidu.com/ditui/zujian/bdBrowserSetup-5956-ftn_1000061134.exe' target='_blank'>百度浏览器<br/>请先升级您的浏览器，效果很炫哦~~";
-          document.body.appendChild(msg);
-          $("#code").css("display", "none")
-          $("#copyright").css("position", "absolute");
-          $("#copyright").css("bottom", "10px");
-          document.execCommand("stop");
-        } else {
-          setTimeout(function () {
-            adjustWordsPosition();
-            startHeartAnimation();
-          }, 5000);
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1); } }
 
-          timeElapse(together);
-          setInterval(function () {
-            timeElapse(together);
-          }, 500);
+      @keyframes ball-beat {
+        50% {
+          opacity: 0.2;
+          -webkit-transform: scale(0.75);
+          transform: scale(0.75); }
 
-          adjustCodePosition();
-          $("#code").typewriter();
-        }
-      </script>
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=0% height=86 src="http://music.163.com/outchain/player?type=2&id=478091762&auto=1&height=0"></iframe> -->
-      <audio id="playMusic" preload="load" autoplay="" loop="" src="http://qnvideo.hunliji.com/n-LvZJP0teoKD9I40PDyXmbhuJQ=/FoNcapNF7tg69bcdyfaDCEValDv_.mp3"></audio>
-      <div style="display:none">
-        <script>
-          var _hmt = _hmt || [];
-          (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?b31cbb20277933cbd10e768be22d3244";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-          })();
-        </script>
-      </div>
-</body>
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1); } }
 
-</html>
+      .ball-beat > div {
+        background-color: #279fcf;
+        width: 15px;
+        height: 15px;
+        border-radius: 100% !important;
+        margin: 2px;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        display: inline-block;
+        -webkit-animation: ball-beat 0.7s 0s infinite linear;
+        animation: ball-beat 0.7s 0s infinite linear; }
+      .ball-beat > div:nth-child(2n-1) {
+        -webkit-animation-delay: 0.35s !important;
+        animation-delay: 0.35s !important; }*/</style><link href=./static/css/app.fb260b8e7a57f7a81ed93a8229e419aa.css rel=stylesheet></head><body><!--[if lte IE 8]>
+    <div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+    <p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
+    </div>
+  <![endif]--><div id=Loading><img src=./static/Spin-0.5s-200px.svg alt=""></div><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.0978a3012d67fb2f21b3.js></script><script type=text/javascript src=./static/js/app.5076948c93949e39e1d8.js></script></body></html>
